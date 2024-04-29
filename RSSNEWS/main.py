@@ -12,7 +12,7 @@ from urllib.parse import urlparse, parse_qs
 from datetime import datetime
 
 config = configparser.ConfigParser()
-config.read('settings.ini')
+config.read('settings.ini', encoding='utf-8')
 
 spreadsheet_id = config['GOOGLE_SHEETS']['SPREADSHEET_ID']
 sheet_name = config['GOOGLE_SHEETS']['SHEET_NAME']
